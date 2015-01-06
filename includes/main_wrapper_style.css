@@ -1,3 +1,7 @@
+@import "homepage_mainnav_style.css";
+@import "homepage_header_style.css";
+
+/* Global settings */
 * {
 	margin:0px;
 	padding:0px;
@@ -7,17 +11,42 @@ main, nav, header, section,div,aside {
 	display:block;
 }
 
-header {
-	border-bottom:1px solid black;
-}
-
 ul {
 	text-decoration: none;
 	list-style-type: none;
 }
 
-#headerNav > ul {
+a {
+	text-decoration: none;
+}
+
+#wrapper {
+	width: 980px;
+	margin: 0 auto;
+	border-top: 0px;
+	border-left: 1px;
+	border-right: 1px;
+	border-color: #D4D4D4;
+	border-style: solid; 
+}
+
+/* Header style settings */
+header {
+	direction: rtl;
+	border: 0px;
+	border-bottom: 1px;
+	border-color: #D4D4D4;
+	border-style: solid; 
+}
+
+#headerNav {
+	direction: rtl;
 	background-color: #000000;
+}
+
+#headerNav > ul {
+	width:980px;
+	margin: 0 auto;
 }
 
 #headerNav > ul > li {
@@ -26,29 +55,73 @@ ul {
 }
 
 #headerNav > ul > li > a {
-	text-decoration: none;
 	color:white;
-}
-
-#wrapper {
-	width: 1000px;
-	margin: 0 auto;
-	border:1px solid black;
 }
 
 #logo {
 	float:right;
 	display:block;
 	width:100px;
-	height:118px;
+	height:117px;
 	background-image: url("../assets/logo.png");
 }
 
 #titleArea {
 	float:right;
-	width:680px;
+	width:69%;
+	padding-top:44px;
 }
 
+#titleArea h2 {
+	margin-right:30px;
+}
+
+#actionArea {
+	float:left;
+	width:20%;
+	height:117px;
+}
+
+#signupLogin {
+	width:100%;
+	height:42%;
+}
+
+#signupLogin label {
+	display:block;
+	padding-top:22px;
+	text-align: center;
+}
+
+#signupLogin label a {
+	color:black;
+}
+
+#siteSearch {
+	width:100%;
+	padding-top:14px;
+}
+
+#siteSearch input[type=text] {
+	margin:0px;
+	margin-right:7px;
+	border:none;
+	width:139px;
+	height:27px;
+	background-color: #EBEBEB;
+}
+
+#siteSearch input[type=submit] {
+	display:block;
+	float:right;
+	border:0px;
+	background-image: url("../assets/siteSearchBTN.jpg");
+	width:32px;
+	height:27px;
+}
+/* Header settings - End */
+
+/*Main sidebar settings*/
 #mainFlowNav {
 	width:185px;
 	float:right;
@@ -60,23 +133,26 @@ ul {
 	height: 139px;
 	margin-bottom: 23px;
 }
+/*Main sidebar settings - End*/
 
+/*Main content area settings*/
 main {
 	position:relative;
 	width:815px;
 	float:left;
+	background-color: black;
 }
+/*Main content area settings - End*/
 
-#mainImg {
-	border-color:#D5D5D5;
-	border-width:1px;
-	border-style: solid;
-	width:655px;
-	height:300px;
-	margin-top:55px;
-	margin-right:54px;
-
+/*Footer - for debugging only*/
+footer {
+	width:100%;
+	height:10px;
+	background-color: #666666;
 }
+/*Footer end*/
+
+
 .clear {
 	clear:both;
 }
