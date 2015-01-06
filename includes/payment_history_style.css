@@ -15,6 +15,7 @@ ul {
 
 a {
 	text-decoration: none;
+	color:#000000;
 }
 
 a:hover {
@@ -224,6 +225,49 @@ main {
 #content {
 	direction:rtl;
 	border:1px solid #000000; 
+	padding-right:10px;
+}
+
+#content form {
+	margin:5px;
+}
+
+#searchForm input[type=submit] {
+	margin-right: 5px;
+}
+
+#filterForm select:first-of-type {
+	margin-right: 38px;
+}
+
+#filterForm input[type=number] {
+	width:38px;
+}
+
+#filterForm input[type=number]:first-of-type {
+	margin-right:37px;
+}
+
+#filterForm input[type=checkbox] {
+	width:18px;
+	height:18px;
+	border: 1px;
+	border-style:solid;
+	border-color:#000000;
+}
+
+#filterForm input[type=checkbox]:checked {
+	border:2px;
+}
+
+
+#filterForm input[type=submit] {
+	width:29px;
+	margin-right:223px;
+}
+
+#filterForm {
+	margin-bottom: 10px;
 }
 
 .table-fill {
