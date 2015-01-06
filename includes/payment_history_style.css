@@ -252,13 +252,13 @@ th {
 	vertical-align:middle;
 }
 
-th:first-child {
+th:last-child {
 	border-top-left-radius:3px;
 }
  
-th:last-child {
+th:first-child {
   	border-top-right-radius:3px;
-  	border-right:none;
+  	border-right:0px;
 }
   
 tr {
@@ -293,11 +293,11 @@ tr:nth-child(odd):hover td {
   background:#4E5066;
 }
 
-tr:last-child td:first-child {
+tr:last-child td:last-child {
   border-bottom-left-radius:3px;
 }
  
-tr:last-child td:last-child {
+tr:last-child td:first-child {
   border-bottom-right-radius:3px;
 }
  
@@ -312,7 +312,7 @@ td {
   border-right: 1px solid #C1C3D1;
 }
 
-td:last-child {
+td:first-child {
   border-right: 0px;
 }
 
