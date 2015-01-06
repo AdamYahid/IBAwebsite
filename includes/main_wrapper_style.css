@@ -62,8 +62,9 @@ ul {
 }
 
 main {
-	width:7956px;
-	float:right;
+	position:relative;
+	width:815px;
+	float:left;
 }
 
 #mainImg {
