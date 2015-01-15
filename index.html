@@ -1,11 +1,34 @@
 <!DOCTYPE html>
-<html lang="he">
+<html>
 	<head>
+		<link rel="stylesheet" type="text/css" href="includes/general_style.css">
+		<link rel="stylesheet" type="text/css" href="includes/header_style.css">
+		<link rel="stylesheet" type="text/css" href="includes/sidebar_nav_style.css">
 		<link rel="stylesheet" type="text/css" href="includes/index_style.css">
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 		<meta name="HandheldFriendly" content="true" />
 		<title>רשות השידור אגף הגביה</title>
+		<script>
+
+			window.onload = function() {
+				document.getElementById("loginLabel").style.display = "block";
+				document.getElementById("loggedinLabel").style.display = "none";
+			};
+			function loginDummy() {
+				var loginLabel = document.getElementById("loginLabel");
+				var loggedinLabel = document.getElementById("loggedinLabel");
+
+				if (loginLabel.style.display == "block") {
+					loginLabel.style.display = "none";
+					loggedinLabel.style.display = "block";
+				}
+				else {
+					loginLabel.style.display = "block";
+					loggedinLabel.style.display = "none";
+				}
+			}
+		</script>
 	</head>
 	<body>
 		<nav id="headerNav">
@@ -24,7 +47,8 @@
 				<section id="titleArea"><h2>ברוכים הבאים<br/>לאתר רשות השידור אגף הגביה</h2></section>
 				<section id="actionArea">
 					<section id="signupLogin">
-						<label><a href="#">רישום</a> | <a href="paymentHistory.html">התחברות</a></label>
+						<label id="loginLabel"><a href="#">רישום</a> | <a href="#" onclick="loginDummy();">התחברות</a></label>
+						<label id="loggedinLabel">שלום, בן ישראלי | <a href="#" onclick="loginDummy();">התנתק</a></label>
 					</section>
 					<section id="siteSearch">
 						<form action="#">
@@ -37,30 +61,30 @@
 			</header>
 			<section id="breadCrumbs"></section>
 			<aside id="mainFlowNav">
-				<label id="startProgressHint">(לחץ <a href="paymentHistory.html">כאן</a> לתחילת תהליך)</label>
+				<label id="startProgressHint">(לחץ <a href="personal_details.html">כאן</a> לתחילת תהליך)</label>
 				<nav>
 					<ul>
 						<li>
 							<section class="mainFlowNavContainer">
-								<a href="paymentHistory.html" class="mainFlowNavBox" ><img src="assets/steps/personalSpaceLoggedOut.jpg"/></a>
+								<a href="personal_details.html" id="personalSpace" class="mainFlowNavBox" ></a>
 								<label>אזור אישי</label>
 							<section>
 						</li>
 						<li>
 							<section class="mainFlowNavContainer">
-								<a href="#" class="mainFlowNavBox"><img src="assets/steps/calcStepUnselected.jpg"/></a>
+								<a href="#" id="calcStep" class="mainFlowNavBox"></a>
 								<label>חשב תשלום</label>
 							<section>
 						</li>
 						<li>
 							<section class="mainFlowNavContainer">
-								<a href="#" class="mainFlowNavBox"><img src="assets/steps/payStepUnselected.jpg"/></a>
+								<a href="#" id="payStep" class="mainFlowNavBox"></a>
 								<label>שלם</label>
 							<section>
 						</li>
 						<li>
 							<section class="mainFlowNavContainer">
-								<a href="#" class="mainFlowNavBox"><img src="assets/steps/leaveStepUnselected.jpg"/></a>
+								<a href="#" id="leaveStep" class="mainFlowNavBox"></a>
 								<label>סיים תהליך והסתלק</label>
 							<section>
 						</li>

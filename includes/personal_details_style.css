@@ -1,0 +1,65 @@
+/*Aside settings*/
+#personalSpace {
+	background-image:url("../assets/steps/personalSpaceSelected.jpg");
+}
+
+/*Main content area settings*/
+main {
+	position:relative;
+	width:755px;
+	float:left;
+	padding: 20px;
+}
+
+#personalDetailsContent {
+	display:block;
+}
+
+
+#paymentHistoryContent form {
+	margin:5px;
+}
+
+#searchForm input[type=submit] {
+	margin-right: 5px;
+}
+
+#filterForm select:first-of-type {
+	margin-right: 38px;
+}
+
+#filterForm input[type=number] {
+	width:38px;
+}
+
+#filterForm input[type=number]:first-of-type {
+	margin-right:37px;
+}
+
+#filterForm input[type=checkbox] {
+	width:18px;
+	height:18px;
+	border: 1px;
+	border-style:solid;
+	border-color:#000000;
+}
+
+#filterForm input[type=checkbox]:checked {
+	border:2px;
+}
+
+
+#filterForm input[type=submit] {
+	width:29px;
+	margin-right:223px;
+}
+
+#filterForm {
+	margin-bottom: 10px;
+}
+
+/*Main content area settings - End*/
+
+
+
+

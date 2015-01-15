@@ -1,0 +1,57 @@
+/*Main sidebar settings*/
+#mainFlowNav {
+	width:185px;
+	float:right;
+	padding-top: 35px;
+}
+
+#startProgressHint {
+	display:block;
+	text-align: center;
+}
+
+#startProgressHint a{
+	color:black;
+	font-weight: bold;
+}
+
+.mainFlowNavContainer {
+	margin-bottom: 8px;
+	padding-right: 16px;
+	padding-left: 30px;
+	direction:rtl;
+}
+
+.mainFlowNavContainer label {
+	display: block;
+	text-align: center;
+}
+
+#selectedStep {
+	border: 1px;
+	border-style: solid;
+	border-color:#000000;
+}
+.mainFlowNavBox {
+	display:block;
+	width: 139px;
+	height: 139px;
+	margin-bottom: 6px;
+}
+
+#personalSpace {
+	background-image:url("../assets/steps/personalSpaceUnselected.jpg");
+}
+
+#calcStep {
+	background-image:url("../assets/steps/calcStepUnselected.jpg");
+}
+
+#payStep {
+	background-image:url("../assets/steps/payStepUnselected.jpg");
+}
+
+#leaveStep {
+	background-image:url("../assets/steps/leaveStepUnselected.jpg");
+}
+/*Main sidebar settings - End*/
