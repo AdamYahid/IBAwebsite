@@ -9,115 +9,61 @@
 
 /*Main content area settings*/
 main {
-	position:absolute;
-	width:800px;
-	height: 700px;
+	position:relative;
+	width:755px;
 	float:left;
 }
 
 #mainImg{
-	position: relative;
+	margin:0px;
 	margin-top: 55px;
 	margin-left: 85px;
+	margin-bottom:19px;
 	width: 655px;
 	height: 300px;
 	background-image: url("../assets/mainImg.jpg");
 }
 
+#articles{
+	position:relative;
+}
+
+.column {
+	width:50%;
+	float:right;
+	direction: rtl;
+}
+
 p,h3,a { 
+	width:200px;
 	text-decoration: none;
 	direction: rtl; 
 }
 
-.qAndA {
+.articleTitle {
 	color: #00006E;
 	font-weight: bold;
 	font-size: 18px;
-	position: absolute;
-	margin-top: 20px;
-	margin-left: 510px;
-	width: 220px;
-	height: 100px;
-
-}
-#qAndA {
-	position: absolute;
-	margin-top: 50px;
-	margin-left: 510px;
 	width: 220px;
 	height: 100px;
 }
 
-.blog {
-	color: #00006E;
-	font-weight: bold;
-	font-size: 18px;
-	position: absolute;
-	margin-top: 20px;
-	margin-left: 85px;
-	width: 220px;
-	height: 100px;
+.articleTitle:before {
+	content:url("../assets/rss.png");
 }
 
-#blog {
-	position: absolute;
-	margin-top: 50px;
-	margin-left: 85px;
-	width: 220px;
-	height: 100px;
-}
-
-.video {
-	color: #00006E;
-	font-weight: bold;
-	font-size: 18px;
-	position: absolute;
-	margin-top: 170px;
-	margin-left: 510px;
-	width: 220px;
-	height: 100px;
-}
-
-#video {
-	position: absolute;
-	margin-top: 200px;
-	margin-left: 510px;
-	width: 220px;
-	height: 100px;
-}
-
-.social {
-	color: #00006E;
-	font-weight: bold;
-	font-size: 18px;
-	position: absolute;
-	margin-top: 170px;
-	margin-left: 85px;
-	width: 220px;
-	height: 100px;
-}
-
-#social {
-	position: absolute;
-	margin-top: 200px;
-	margin-left: 85px;
-	width: 220px;
-	height: 100px;
+article {
+	padding-right: 20px;
+	margin-bottom: 48px;
 }
 
 #socialImg{
-	position: absolute;
-	margin-top: 250px;
-	margin-left: 100px;
 	width: 188px;
 	height: 57px;
 	background-image: url("../assets/socialButtons.jpg");
 }
 
 #videoImg{
-	position: absolute;
-	margin-top: 244px;
-	margin-left: 520px;
 	width: 215px;
 	height: 153px;
 	background-image: url("../assets/video.jpg");
@@ -132,4 +78,9 @@ footer {
 }
 /*Footer end*/
 
-
+@media (max-width: 699px) {
+	
+	#headerNav,#titleArea,#loggedInLabel,#siteSearch,#breadCrumbs,#mainFlowNav,footer,#wrapper {
+		display:none;
+	}
+}

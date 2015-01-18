@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<title>רשות השידור אגף הגביה</title>
+
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="includes/general_style.css">
 		<link rel="stylesheet" type="text/css" href="includes/header_style.css">
 		<link rel="stylesheet" type="text/css" href="includes/sidebar_nav_style.css">
-		<link rel="stylesheet" type="text/css" href="includes/personal_details_style.css">
-		<link href="includes/lightbox/css/lightbox.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="includes/calc_page_style.css">
+
 		<meta charset="utf-8">
+
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 		<meta name="HandheldFriendly" content="true" />
-		<title>רשות השידור אגף הגביה</title>
+		
 		<script src="includes/lightbox/js/jquery-1.11.0.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 		<script src="includes/bootbox.min.js"></script>
@@ -63,7 +66,7 @@
 					<ul>
 						<li>
 							<section class="mainFlowNavContainer">
-								<a href="paymentHistory.html" id="personalSpace" class="mainFlowNavBox" ></a>
+								<a href="personal_details.html" id="personalSpace" class="mainFlowNavBox" ></a>
 								<label>אזור אישי</label>
 							<section>
 						</li>
@@ -97,86 +100,20 @@
 					</ul>
 				</div>
 				<section id="tabsContainer">
-					<section id="currentBillContent" class="tabContent activeContent"></section>
+					<section id="currentBillContent" class="tabContent activeContent">
+						<h2>חשבונית לתשלום</h2>
+					</section>
 					<section id="checkDebtContent" class="tabContent">
 						<h2>בירור חובות</h2>
-						<form id="searchForm" action="#">
-							<label>חפש לפי מספר חשבונית </label><input type="text"/><input type="submit" value="חפש"/>
-						</form>
-						<form id="filterForm" action="#">
-							<label>חשבונית בין שנה <select>
-															<option value="2014">2014</option>
-															<option value="2013">2013</option>
-															<option value="2012">2014</option>
-															<option value="2011">2013</option>
-															<option value="2010">2014</option>
-															<option value="2009">2013</option>
-																						</select> לשנה <select>
-															<option value="2014">2014</option>
-															<option value="2013">2013</option>
-															<option value="2012">2014</option>
-															<option value="2011">2013</option>
-															<option value="2010">2014</option>
-															<option value="2009">2013</option>
-																						</select></label><br/>
-							<label>חשבונית בין סכום<input type="number"/> לסכום <input type="number"/></label><br/>
-							<label>שולם באיחור<input type="checkbox" name="isPaidLate" value="1"><input type="submit" value="סנן"/></label>
-						</form>
-
-						<table class="table-fill">
-							<thead>
-								<tr>
-									<th>תאריך</th>
-									<th>מס' חשבונית</th>
-									<th>אגרה</th>
-									<th>קנסות</th>
-									<th>סה"כ</th>
-									<th>חשבונית</th>
-								</tr>
-							</thead>
-							<tbody class="table-hover">
-								<tr>
-									<td>1.1.2010</td>
-									<td>33946</td>
-									<td>450</td>
-									<td>אין</td>
-									<td>450</td>
-									<td><a href="#"><img src="assets/paymentHistory/exportpdf.png"/></a></td>
-								</tr>
-								<tr>
-									<td>1.1.2011</td>
-									<td>64086</td>
-									<td>450</td>
-									<td>110</td>
-									<td>560</td>
-									<td><a href="#"><img src="assets/paymentHistory/exportpdf.png"/></a></td>
-								</tr>
-								<tr>
-									<td>1.1.2012</td>
-									<td>74767</td>
-									<td>450</td>
-									<td>56</td>
-									<td>516</td>
-									<td><a href="#"><img src="assets/paymentHistory/exportpdf.png"/></a></td>
-								</tr>
-								<tr>
-									<td>1.1.2013</td>
-									<td>76010</td>
-									<td>450</td>
-									<td>אין</td>
-									<td>450</td>
-									<td><a href="#"><img src="assets/paymentHistory/exportpdf.png"/></a></td>
-								</tr>
-								<tr>
-									<td>1.1.2014</td>
-									<td>57987</td>
-									<td>450</td>
-									<td>אין</td>
-									<td>450</td>
-									<td><a href="assets/paymentHistory/exportpdf.png" data-lightbox="image-1"><img src="assets/paymentHistory/exportpdf.png"/></a></td>
-								</tr>
-							</tbody>
-						</table></section>
+						<p>בן היקר, הריני להודיעף כי נכון לתאריך 1.7.7 בשעה 17:30,<br>
+							<strong>טרם שילמת אגרת טלויזיה לשנת 2013</strong><br>
+							חשבון זה כולל את סכום האגרה הבסיסי ותוספת פיגורים של 50%<br>על פי חוק רשות השידור.<br></p><br>
+						<p>הינך מסתכן בנקיטת פעולה משפטית ופתיחת תיק הוצאה לפועל.<br>שלם את חובך!</p><br>
+						<p>לנוחיותך מגוון אמצעי תשלום חדשניים</p><br>
+						<a href="#" id="payBTN" class="debtBTN">שלם</a>
+						<a href="#disputesContent" id="disputeBTN" class="debtBTN">ערער</a>
+						<div class="clear">
+					</section>
 					<section id="disputesContent" class="tabContent">
 						<h2>הגשת ערעור</h2>
 						<form id="disputeForm" action="simepage.php" method="get">

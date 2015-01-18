@@ -9,6 +9,10 @@ window.onload = function() {
 
 	}); 
 
+	$("#disputeBTN").click(function () {
+		$("#disputesTab").click();
+	});
+
 	var userConfirmed = false;
 
 	$("#disputeForm").submit(function(event) {

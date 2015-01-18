@@ -97,7 +97,9 @@
 					</ul>
 				</div>
 				<section id="tabsContainer">
-					<section id="personalDetailsContent" class="tabContent"></section>
+					<section id="personalDetailsContent" class="tabContent">
+						<h2>פרטים אישיים</h2>
+					</section>
 					<section id="paymentHistoryContent" class="tabContent">
 						<h2>הסטורית תשלומים</h2>
 						<form id="searchForm" action="#">
@@ -178,13 +180,24 @@
 							</tbody>
 						</table></section>
 					<section id="disputesHistoryContent" class="tabContent">
-						<h2>הגשת ערעור</h2>
-						<form id="disputeForm" action="simepage.php" method="get">
-							<label>מספר חשבונית:</label><input id="disputeNumber" type="text"/><br>
-							<label>טקסט(נימוק להגשת הערעור):</label></br>
-							<textArea id="disputeBody" form="disputeForm"></textArea>
-							<input type="submit" value="ערער"/>
-						</form></section>
+						<h2>הסטוריית ערעורים</h2>
+						<table class="table-fill">
+							<thead>
+								<tr>
+									<th>תאריך</th>
+									<th>מספר חשבונית</th>
+									<th>סטטוס ערעור</th>
+								</tr>
+							</thead>
+							<tbody class="table-hover">
+								<tr>
+									<td>1.1.2014</td>
+									<td>57987</td>
+									<td>450</td>
+								</tr>
+							</tbody>
+						</table>
+						</section>
 				</section>
 			</main>	
 			<div class="clear"></div>
