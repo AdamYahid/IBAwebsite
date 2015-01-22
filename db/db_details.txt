@@ -1,0 +1,17 @@
+sb server: localhost
+db name: shaming
+
+table: list
+fields:[name | type]
+id int auto_increment
+name text
+reason text
+score int
+picture_path text (assets/shaming_people/shaming + id.jpg)
+
+table: pending_list
+fields:[name | type]
+name text
+reason text
+score int
+picture_path text
