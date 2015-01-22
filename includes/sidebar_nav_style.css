@@ -54,4 +54,13 @@
 #leaveStep {
 	background-image:url("../assets/steps/leaveStepUnselected.jpg");
 }
+
+/*Mobile settings*/
+@media (max-width: 699px) {
+	
+	#homePage #mainFlowNav{
+		display:none;
+	}
+}
+/* Mobile settings - end*/
 /*Main sidebar settings - End*/

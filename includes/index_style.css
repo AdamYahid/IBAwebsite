@@ -79,8 +79,8 @@ footer {
 /*Footer end*/
 
 @media (max-width: 699px) {
-	
-	#headerNav,#titleArea,#loggedInLabel,#siteSearch,#breadCrumbs,#mainFlowNav,footer,#wrapper {
+	main {
 		display:none;
 	}
 }
+

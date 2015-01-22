@@ -105,4 +105,36 @@ header {
 	height:27px;
 	cursor: pointer;
 }
+
+/*Mobile settings*/
+@media (max-width: 699px) {
+	
+	#headerNav,#titleArea,#loggedinLabel,#siteSearch {
+		display:none;
+	}
+
+	#wrapper {
+		width:100%;
+	}
+
+	#headerNav > ul {
+		display:none;
+	}
+
+	header {
+		width:100%;
+		height:100%;
+	}
+
+	#logo {
+		width:100%;
+		background-repeat: no-repeat;
+	}
+
+	#loginLabel a {
+		width:100%;
+	}
+}
+/* Mobile settings - end*/
+
 /* Header settings - End */
