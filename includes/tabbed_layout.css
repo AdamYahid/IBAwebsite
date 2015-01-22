@@ -1,0 +1,39 @@
+/* Tabbed layout styling*/
+#tabBar{
+  list-style:none;
+  height:29px;
+  padding:0;  
+  margin:0;  
+}
+
+#tabBar li {
+  float:right;
+  border:1px solid #000000;
+  border-bottom: none;
+  padding:5px;
+  cursor: pointer;
+
+  /* CSS 3 elements */ 
+  -webkit-border-top-right-radius:0.50em; 
+  -webkit-border-top-left-radius:0.50em; 
+  -moz-border-radius-topright:0.50em; 
+  -moz-border-radius-topleft:0.50em; 
+  border-top-right-radius:0.50em; 
+  border-top-left-radius:0.50em; 
+}
+
+.selectedTab {
+  background-color: #B7B1B1;
+}
+
+.tabContent {
+  display:none;
+  direction:rtl;
+  border:1px solid #000000; 
+  padding-right:10px; 
+}
+
+.activeContent {
+  display:block;
+}
+/* Tabbed layout styling - end*/

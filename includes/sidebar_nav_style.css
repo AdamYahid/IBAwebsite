@@ -43,8 +43,20 @@
 	background-image:url("../assets/steps/personalSpaceUnselected.jpg");
 }
 
+#homePage #personalSpace {
+	background-image:url("../assets/steps/personalSpaceLoggedOut.jpg");
+}
+
+#personalDetailsPage #personalSpace {
+	background-image:url("../assets/steps/personalSpaceSelected.jpg");
+}
+
 #calcStep {
 	background-image:url("../assets/steps/calcStepUnselected.jpg");
+}
+
+#calcPage #calcStep {
+	background-image:url("../assets/steps/calcStepSelected.jpg");
 }
 
 #payStep {
