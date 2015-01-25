@@ -42,12 +42,12 @@
 				</header>
 				<section id="breadCrumbs"></section>
 				<aside id="mainFlowNav">
-					<label id="startProgressHint">(לחץ <a href="personal_details.html">כאן</a> לתחילת תהליך)</label>
+					<label id="startProgressHint">(לחץ <a href="personal_details.php">כאן</a> לתחילת תהליך)</label>
 					<nav>
 						<ul>
 							<li>
 								<section class="mainFlowNavContainer">
-									<a href="personal_details.html" id="personalSpace" class="mainFlowNavBox" ></a>
+									<a href="personal_details.php" id="personalSpace" class="mainFlowNavBox" ></a>
 									<label>אזור אישי</label>
 								<section>
 							</li>

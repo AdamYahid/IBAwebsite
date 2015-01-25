@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -74,7 +76,7 @@
 					<ul>
 						<li>
 							<section class="mainFlowNavContainer">
-								<a href="personal_details.html" id="personalSpace" class="mainFlowNavBox" ></a>
+								<a href="personal_details.php" id="personalSpace" class="mainFlowNavBox" ></a>
 								<label>אזור אישי</label>
 							<section>
 						</li>
