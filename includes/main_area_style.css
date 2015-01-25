@@ -161,4 +161,8 @@
 		display:none;
 	}
 	/*index.html settings - mobile - end*/
+
+	main {
+		display:none;
+	}
 }

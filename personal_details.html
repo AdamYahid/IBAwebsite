@@ -31,24 +31,34 @@
 					<li><a href="#">שאלות ותשובות</a></li>
 					<li><a href="#">חדשות ועדכונים</a></li>
 					<li><a href="#">צור קשר</a></li>
+					<li><a href="shaming_list.php">רשימת הבושה הגדולה</a></li>
 				</ul>
 			</nav>
 		<div id="wrapper">
 			<header>
-				<a id="logo" href="#"></a>
-				<section id="titleArea"><h2>רשות השידור אגף הגביה</h2></section>
-				<section id="actionArea">
-					<section id="signupLogin">
-						<label id="loggedinLabel">שלום, בן ישראלי | <a href="index.html">התנתק</a></label>
-					</section>
-					<section id="siteSearch">
-						<form action="#">
-							<input type="submit" value=""/>
-							<input type="text" placeholder="חיפוש"/>
-						</form>
-					</section>
+				<section id="mobileHeader">
+					<label>שלום, בן</label>
+					<a id="logoMobile" href="#"></a>
+					<label>רשות השידור אגף הגבייה</label>
+					<section id="menuBTN"></section>
+					<div class="clear"></div>
 				</section>
-				<div class="clear"></div>
+				<section id="desktopHeader">
+					<a id="logo" href="#"></a>
+					<section id="titleArea"><h2>רשות השידור אגף הגביה</h2></section>
+					<section id="actionArea">
+						<section id="signupLogin">
+							<label id="loggedinLabel">שלום, בן ישראלי | <a href="index.html">התנתק</a></label>
+						</section>
+						<section id="siteSearch">
+							<form action="#">
+								<input type="submit" value=""/>
+								<input type="text" placeholder="חיפוש"/>
+							</form>
+						</section>
+					</section>
+					<div class="clear"></div>
+				</section>
 			</header>
 			<section id="breadCrumbs">
 				<ul>
@@ -64,7 +74,7 @@
 					<ul>
 						<li>
 							<section class="mainFlowNavContainer">
-								<a href="paymentHistory.html" id="personalSpace" class="mainFlowNavBox" ></a>
+								<a href="personal_details.html" id="personalSpace" class="mainFlowNavBox" ></a>
 								<label>אזור אישי</label>
 							<section>
 						</li>
@@ -100,6 +110,7 @@
 				<section id="tabsContainer">
 					<section id="personalDetailsContent" class="tabContent">
 						<h2>פרטים אישיים</h2>
+						<label>שם:בן ישראלי</label>
 					</section>
 					<section id="paymentHistoryContent" class="tabContent">
 						<h2>הסטורית תשלומים</h2>

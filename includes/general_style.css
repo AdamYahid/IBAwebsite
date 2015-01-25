@@ -1,4 +1,6 @@
 /* Global settings */
+@import url(http://fonts.googleapis.com/css?family=Arimo);
+
 * {
 	margin:0px;
 	padding:0px;
@@ -6,6 +8,10 @@
 
 main, nav, header, section,div,aside,article {
 	display:block;
+}
+
+body {
+  font-family: 'Arimo', sans-serif;
 }
 
 ul {
@@ -58,9 +64,10 @@ main {
 /*Mobile settings*/
 @media (max-width: 699px) {
   
-  footer {
-    display:none;
-  }
+  a:hover {
+  text-decoration: none;
+}
+
 
   #wrapper {
     position: relative;
@@ -70,6 +77,10 @@ main {
     margin: 0 auto;
     z-index: auto;
     border:0px;
+  }
+
+  .desktopText { 
+    display:none;
   }
 }
 .clear {

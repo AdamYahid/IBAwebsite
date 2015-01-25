@@ -73,6 +73,10 @@
 	#homePage #mainFlowNav{
 		display:none;
 	}
+
+	#mainFlowNav {
+		display:none;
+	}
 }
 /* Mobile settings - end*/
 /*Main sidebar settings - End*/
