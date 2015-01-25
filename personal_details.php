@@ -1,4 +1,31 @@
+<?php
+	$servername = "182.50.131.14";//"localhost";
+	$username = "mtastudDB1";//"root";
+	$password = "mtastudDB1!";//"root";
+	$dbname = "mtastudDB1";//"shaming";
 
+	$conn = new mysqli($servername, $username, $password, $dbname);
+	$conn->set_charset("utf8");
+	// Check connection
+	if ($conn->connect_error) 
+	{
+	    die("Connection failed: " . $conn->connect_error);
+	} 
+
+	if (isset($_POST["disputeFormToken"])) //Add row to db if page was entered via form
+	{
+		$uid = 12345; //Mock UID
+		$date = date('Y-m-d');
+		$disputeNumber = $_POST["disputeNumber"];
+		$disputeText = $_POST["disputeBody"];
+
+		$conn->query("INSERT INTO Disputes 
+								VALUES ('".$uid."','".$date."','".$disputeNumber."','".$disputeText."')");
+	}
+
+	$sql = "SELECT * FROM Disputes";
+	$result = $conn->query($sql);
+?>
 
 <!DOCTYPE html>
 <html>
@@ -138,7 +165,6 @@
 							<label>חשבונית בין סכום<input type="number"/> לסכום <input type="number"/></label><br/>
 							<label>שולם באיחור<input type="checkbox" name="isPaidLate" value="1"><input type="submit" value="סנן"/></label>
 						</form>
-
 						<table class="table-fill">
 							<thead>
 								<tr>
@@ -204,11 +230,15 @@
 								</tr>
 							</thead>
 							<tbody class="table-hover">
-								<tr>
-									<td>1.1.2014</td>
-									<td>57987</td>
-									<td>450</td>
-								</tr>
+							<?php
+								if ($result->num_rows > 0) 
+								{
+								    while( $row = $result->fetch_assoc() ) 
+								    {
+								        echo "<tr><td>".$row["disputeDate"]."</td><td>".$row["disputeID"]."</td><td>".$row["disputeText"] ."</td></tr>";
+								    }
+								}
+							?>
 							</tbody>
 						</table>
 						</section>
@@ -218,3 +248,6 @@
 		</div>
 	</body>
 </html>
+<?php
+	$conn->close();
+?>

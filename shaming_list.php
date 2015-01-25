@@ -10,7 +10,7 @@
 		<meta charset="utf-8">
 		<title>רשימת הבושה הגדולה</title>
 	</head>
-	<body id="shamingListPage">
+	<body id="shamingListPage" class="notLoggedIn">
 		<nav id="headerNav">
 					<ul>
 						<li><a href="index.html">בית</a></li>
@@ -28,8 +28,7 @@
 					<section id="titleArea"><h2>ברוכים הבאים<br/>לאתר רשות השידור אגף הגביה</h2></section>
 					<section id="actionArea">
 						<section id="signupLogin">
-							<label id="loginLabel"><a href="#">רישום</a> | <a href="#" onclick="loginDummy();">התחברות</a></label>
-							<label id="loggedinLabel">שלום, בן ישראלי | <a href="#" onclick="loginDummy();">התנתק</a></label>
+							<label id="loginLabel"><a href="personal_details.php">רישום</a> <a href="personal_details.php">התחברות</a></label>
 						</section>
 						<section id="siteSearch">
 							<form action="#">

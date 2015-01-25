@@ -118,11 +118,11 @@
 					</section>
 					<section id="disputesContent" class="tabContent">
 						<h2>הגשת ערעור</h2>
-						<form id="disputeForm" action="simepage.php" method="get">
-							<label>מספר חשבונית:</label><input id="disputeNumber" type="text"/><br>
+						<form id="disputeForm" action="personal_details.php" method="post">
+							<label>מספר חשבונית:</label><input id="disputeNumber" name="disputeNumber" type="text"/><br>
 							<label>טקסט(נימוק להגשת הערעור):</label></br>
-							<textArea id="disputeBody" form="disputeForm"></textArea>
-							<input type="hidden" value"disputeFormToken"/>
+							<textArea id="disputeBody" name="disputeBody" form="disputeForm"></textArea>
+							<input type="hidden" name="disputeFormToken" value="disputeFormToken"/>
 							<input type="submit" value="ערער"/>
 						</form></section>
 				</section>

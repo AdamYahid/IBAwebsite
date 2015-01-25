@@ -43,7 +43,7 @@
 	background-image:url("../assets/steps/personalSpaceUnselected.jpg");
 }
 
-#homePage #personalSpace {
+.notLoggedIn #personalSpace {
 	background-image:url("../assets/steps/personalSpaceLoggedOut.jpg");
 }
 
