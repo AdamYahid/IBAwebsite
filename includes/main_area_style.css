@@ -1,0 +1,168 @@
+/* index.html main area styling - desktop*/ 
+#homePage #mainImg{
+	margin:0px;
+	margin-top: 55px;
+	margin-left: 85px;
+	margin-bottom:19px;
+	width: 655px;
+	height: 300px;
+	background-image: url("../assets/mainImg.jpg");
+}
+
+#homePage #articles{
+	position:relative;
+}
+
+#homePage .column {
+	width:50%;
+	float:right;
+	direction: rtl;
+}
+
+#homePage p,h3,a { 
+	width:200px;
+	text-decoration: none;
+	direction: rtl; 
+}
+
+#homePage .articleTitle {
+	color: #00006E;
+	font-weight: bold;
+	font-size: 18px;
+	width: 220px;
+	height: 100px;
+}
+
+#homePage .articleTitle:before {
+	content:url("../assets/rss.png");
+}
+
+#homePage article {
+	padding-right: 20px;
+	margin-bottom: 48px;
+}
+
+#homePage #socialImg{
+	width: 188px;
+	height: 57px;
+	background-image: url("../assets/socialButtons.jpg");
+}
+
+#homePage #videoImg{
+	width: 215px;
+	height: 153px;
+	background-image: url("../assets/video.jpg");
+}
+/* index.html main area styling - desktop*/ 
+
+/*personal_details.html main area styling - desktop*/
+#personalDetailsPage #personalDetailsContent {
+	display:block;
+}
+
+
+#personalDetailsPage #paymentHistoryContent form {
+	margin:5px;
+}
+
+#personalDetailsPage #searchForm input[type=submit] {
+	margin-right: 5px;
+}
+
+#personalDetailsPage #filterForm select:first-of-type {
+	margin-right: 38px;
+}
+
+#personalDetailsPage #filterForm input[type=number] {
+	width:38px;
+}
+
+#personalDetailsPage #filterForm input[type=number]:first-of-type {
+	margin-right:37px;
+}
+
+#personalDetailsPage #filterForm input[type=checkbox] {
+	width:18px;
+	height:18px;
+	border: 1px;
+	border-style:solid;
+	border-color:#000000;
+}
+
+#personalDetailsPage #filterForm input[type=checkbox]:checked {
+	border:2px;
+}
+
+
+#personalDetailsPage #filterForm input[type=submit] {
+	width:29px;
+	margin-right:223px;
+}
+
+#personalDetailsPage #filterForm {
+	margin-bottom: 10px;
+}
+/*personal_details.html main area styling - desktop - end*/
+
+/*calc_page.html main area styling - desktop*/
+#calcPage strong {
+	color:#FF0000;
+}
+
+#calcPage .debtBTN {
+	display:block;
+	width:95px;
+	height:20px;
+	float:right;
+	margin-left: 25px;
+	margin-bottom: 10px;
+	text-align: center;
+	color:#000000;
+}
+
+#calcPage #payBTN {
+	background-color: #FEF200;
+}
+
+#calcPage #disputeBTN {
+	background-color: #B7B1B1;
+}
+/*calc_page.html main area styling - desktop - end*/
+
+/*shaming_list.php main area stying - desktop*/
+.mainShaming {
+	direction:rtl;
+}
+.mainShaming .shamingTable {
+	position: relative;
+    left: 50px;
+    margin-top: 10px;
+    margin-left: 110px;
+    width: 600px;
+}
+/*shaming_list.php main area stying - desktop - end*/
+
+/*rat_on_friend.php main area stying - desktop*/
+.rattedOnFriend {
+	direction:rtl;
+}
+.rattedOnFriend .rattedOnFriend {
+	position: relative;
+    left: 50px;
+    margin-top: 10px;
+    margin-left: 110px;
+    width: 600px;
+}
+/*rat_on_friend.php main area stying - desktop - end*/
+
+@media (max-width: 699px) {
+	/*index.html settings - mobile*/
+	#homePage main {
+		display:none;
+	}
+	/*index.html settings - mobile - end*/
+
+	main {
+		display:none;
+	}
+}

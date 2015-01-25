@@ -31,6 +31,10 @@ header {
 	color:white;
 }
 
+#mobileHeader {
+	display:none;
+}
+
 #logo {
 	float:right;
 	display:block;
@@ -45,6 +49,9 @@ header {
 	padding-top:90px;
 }
 
+#homePage #titleArea {
+	padding-top:44px;
+}
 
 
 #titleArea h2 {
@@ -64,7 +71,7 @@ header {
 }
 
 #loginLabel {
-	display:none;
+	display:block;
 	padding-top:22px;
 	text-align: center;
 }
@@ -78,6 +85,8 @@ header {
 	padding-top:22px;
 	text-align: center;
 }
+
+
 #loggedinLabel a{
 	color:red;
 }
@@ -108,32 +117,104 @@ header {
 
 /*Mobile settings*/
 @media (max-width: 699px) {
-	
-	#headerNav,#titleArea,#loggedinLabel,#siteSearch {
+	/*homePage mobile settings*/
+	#headerNav,#titleArea,#loggedinLabel,#siteSearch,#breadCrumbs {
 		display:none;
 	}
 
-	#wrapper {
-		width:100%;
-	}
-
-	#headerNav > ul {
+	#homePage #headerNav > ul {
 		display:none;
 	}
 
-	header {
+	#homePage header {
 		width:100%;
+		height:inherit;
+		margin:0px;
+		border:0px;
+	}
+
+	#homePage #logo {
+		width:100%;
+		height:79%;
+		background-image: url("../assets/logoBig.jpg");
+		background-size:contain;
+		background-repeat: no-repeat;
+		background-position: top center;
+		margin: 0px;
+		border:0px;
+
+	}
+
+	#homePage #actionArea {
+		width:99%;
+		height:19%;
+	}
+
+	#homePage #signupLogin {
 		height:100%;
 	}
 
-	#logo {
-		width:100%;
-		background-repeat: no-repeat;
+	#homePage #loginLabel {
+		display:block;
+		padding:0px;
 	}
 
-	#loginLabel a {
+	#homePage #loginLabel a {
+		display:block;
 		width:100%;
+		height:100%;
+		font-size: 40px;
+		border: 0px;
+		border-top: 1px;
+		border-color:black;
+		border-style: solid; 
 	}
+	/*homePage mobile settings*/
+
+	/*mobileHeaderSettings*/
+	#mobileHeader {
+		display:block;
+		height:26px;
+	}
+
+	#desktopHeader {
+		display:none;
+	}
+
+	#mobileHeader #logoMobile{
+		display:block;
+		width:25px;
+		height:26px;
+		background-size:contain;
+		background-image:url("../assets/logo.png");
+		background-repeat: no-repeat;
+		float:right;
+	}
+
+	label {
+		margin:0px;
+		padding:0px;
+		height:26px;
+		padding-top:9px;
+		float:right;
+	}
+
+	label:first-child {
+		border:1px;
+		border-color:#A5A5A5;
+		border-style:solid;
+		width:79px;
+		padding-right:9px;
+	}
+
+
+
+
+
+
+
+
+
 }
 /* Mobile settings - end*/
 

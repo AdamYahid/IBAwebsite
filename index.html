@@ -4,31 +4,11 @@
 		<link rel="stylesheet" type="text/css" href="includes/general_style.css">
 		<link rel="stylesheet" type="text/css" href="includes/header_style.css">
 		<link rel="stylesheet" type="text/css" href="includes/sidebar_nav_style.css">
-		<link rel="stylesheet" type="text/css" href="includes/index_style.css">
+		<link rel="stylesheet" type="text/css" href="includes/main_area_style.css">
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 		<meta name="HandheldFriendly" content="true" />
 		<title>רשות השידור אגף הגביה</title>
-		<script>
-
-			window.onload = function() {
-				document.getElementById("loginLabel").style.display = "block";
-				document.getElementById("loggedinLabel").style.display = "none";
-			};
-			function loginDummy() {
-				var loginLabel = document.getElementById("loginLabel");
-				var loggedinLabel = document.getElementById("loggedinLabel");
-
-				if (loginLabel.style.display == "block") {
-					loginLabel.style.display = "none";
-					loggedinLabel.style.display = "block";
-				}
-				else {
-					loginLabel.style.display = "block";
-					loggedinLabel.style.display = "none";
-				}
-			}
-		</script>
 	</head>
 	<body id="homePage">
 		<nav id="headerNav">
@@ -48,8 +28,7 @@
 				<section id="titleArea"><h2>ברוכים הבאים<br/>לאתר רשות השידור אגף הגביה</h2></section>
 				<section id="actionArea">
 					<section id="signupLogin">
-						<label id="loginLabel"><a href="#">רישום</a> | <a href="#" onclick="loginDummy();">התחברות</a></label>
-						<label id="loggedinLabel">שלום, בן ישראלי | <a href="#" onclick="loginDummy();">התנתק</a></label>
+						<label id="loginLabel"><a href="personal_details.html">רישום</a> <a href="personal_details.html">התחברות</a></label>
 					</section>
 					<section id="siteSearch">
 						<form action="#">
@@ -121,7 +100,6 @@
 				</section>
 			</main>	
 			<div class="clear"></div>
-			<footer></footer>
 		</div>
 	</body>
 </html>
