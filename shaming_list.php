@@ -75,10 +75,10 @@
 				<section class="mainShaming" dir="rtl">
 					<?php
 
-					$servername = "localhost";
-					$username = "root";
-					$password = "root";
-					$dbname = "shaming";
+					$servername = "182.50.131.14";//"localhost";
+					$username = "mtastudDB1";//"root";
+					$password = "mtastudDB1!";//"root";
+					$dbname = "mtastudDB1";//"shaming";
 
 					// Create connection
 					$conn = new mysqli($servername, $username, $password, $dbname);
