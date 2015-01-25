@@ -37,12 +37,6 @@ a:hover {
 	border-style: solid; 
 }
 
-main {
-  position:relative;
-  width:755px;
-  float:left;
-  padding:20px;
-}
 
 #homePage main {
   padding:0px;

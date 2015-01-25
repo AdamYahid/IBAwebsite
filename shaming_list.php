@@ -5,6 +5,7 @@
 		<link rel="stylesheet" type="text/css" href="includes/header_style.css">
 		<link rel="stylesheet" type="text/css" href="includes/sidebar_nav_style.css">
 		<link rel="stylesheet" type="text/css" href="includes/main_area_style.css">
+		<link rel="stylesheet" type="text/css" href="includes/table_style.css">
 
 		<meta charset="utf-8">
 		<title>רשימת הבושה הגדולה</title>
@@ -74,21 +75,31 @@
 				<main>
 					<section class="mainShaming">
 						<?php
-
-							include("db/db.php");
+							$servername = "182.50.131.14";//"localhost";
+							$username = "mtastudDB1";//"root";
+							$password = "mtastudDB1!";//"root";
+							$dbname = "mtastudDB1";//"shaming";
+							// Create connection
+							$conn = new mysqli($servername, $username, $password, $dbname);
+							$conn->set_charset("utf8");
+							// Check connection
+							if ($conn->connect_error) 
+							{
+							    die("Connection failed: " . $conn->connect_error);
+							} 
 
 							$sql = "SELECT * FROM list";
 							$result = $conn->query($sql);
 
 							if ($result->num_rows > 0) 
 							{
-								echo "<table id='shamingTable' dir='rtl'><tr><th>שם</th><th>עבירה</th><th>ניקוד</th><th>תמונה</th></tr>";
+								echo "<table class='table-fill'><thead><tr><th>שם</th><th>עבירה</th><th>ניקוד</th><th>תמונה</th></tr></thead><tbody class='table-hover'>";
 							    // output data of each row
 							    while( $row = $result->fetch_assoc() ) 
 							    {
 							        echo "<tr><td>".$row["name"]."</td><td>".$row["reason"]."</td><td>".$row["score"] ."</td><td><img src='".$row["picture_path"]."'></td></tr>";
 							    }
-							    echo "</table><br>";
+							    echo "<tbody></table><br>";
 							} 
 							else 
 							{
