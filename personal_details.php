@@ -41,14 +41,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 		<meta name="HandheldFriendly" content="true" />
 		<title>רשות השידור אגף הגביה</title>
-		<script src="includes/lightbox/js/jquery-1.11.0.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 		<script src="includes/bootbox.min.js"></script>
-		<script>
-			window.onload = function() {
-				$("#loggedinLabel").css("display","block");
-			};
-		</script>
 		<script src="includes/complaintSubmitEventHandler.js"></script>
 	</head>
 	<body id="personalDetailsPage">
@@ -139,7 +134,17 @@
 				<section id="tabsContainer">
 					<section id="personalDetailsContent" class="tabContent">
 						<h2>פרטים אישיים</h2>
-						<label>שם:בן ישראלי</label>
+						<label class="userdata">שם:בן ישראלי</label>
+						<label class="userdata">תז:12355789</label>
+						<label class="userdata">מייל:beni123@gmail.com</label>
+						<label class="userdata">מספר טלפון:052-3455432</label>
+						<label class="userdata">מין:זכר</label>
+						<label class="userdata">סטטוס משפחתי:נשוי</label>
+						<label class="userdata">גיל:45</label>
+						<label class="userdata">כתובת:השוטטות 25</label>
+						<label class="userdata">עיר:ראשון לציון</label>
+						<label class="userdata">מיקוד:756321</label>
+						<a id="editBTN" href="#">ערוך</a>
 					</section>
 					<section id="paymentHistoryContent" class="tabContent">
 						<h2>הסטורית תשלומים</h2>

@@ -4,8 +4,7 @@
 		<link rel="stylesheet" type="text/css" href="includes/general_style.css">
 		<link rel="stylesheet" type="text/css" href="includes/header_style.css">
 		<link rel="stylesheet" type="text/css" href="includes/sidebar_nav_style.css">
-		<link rel="stylesheet" type="text/css" href="includes/index_style.css">
-		<link rel="stylesheet" type="text/css" href="includes/rat_on_friend_style.css">
+		<link rel="stylesheet" type="text/css" href="includes/main_area_style.css">
 
 		<meta charset="utf-8">
 		<title>דף הלשנה</title>
