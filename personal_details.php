@@ -100,25 +100,25 @@
 							<section class="mainFlowNavContainer">
 								<a href="personal_details.php" id="personalSpace" class="mainFlowNavBox" ></a>
 								<label>אזור אישי</label>
-							<section>
+							</section>
 						</li>
 						<li>
 							<section class="mainFlowNavContainer">
 								<a href="calc_page.html" id="calcStep" class="mainFlowNavBox"></a>
 								<label>חשב תשלום</label>
-							<section>
+							</section>
 						</li>
 						<li>
 							<section class="mainFlowNavContainer">
 								<a href="#" id="payStep" class="mainFlowNavBox"></a>
 								<label>שלם</label>
-							<section>
+							</section>
 						</li>
 						<li>
 							<section class="mainFlowNavContainer">
 								<a href="#" id="leaveStep" class="mainFlowNavBox"></a>
 								<label>סיים תהליך והסתלק</label>
-							<section>
+							</section>
 						</li>
 					</ul>
 				</nav>

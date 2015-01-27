@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="includes/general_style.css">
 		<link rel="stylesheet" type="text/css" href="includes/header_style.css">
 		<link rel="stylesheet" type="text/css" href="includes/sidebar_nav_style.css">
@@ -39,7 +40,13 @@
 					</section>
 					<div class="clear"></div>
 				</header>
-				<section id="breadCrumbs"></section>
+				<section id="breadCrumbs">
+				<ul>
+					<li><a href="index.html">בית</a></li>
+					<li>&gt;</li>
+					<li><a href="#">רשימת הבושה הגדולה</a></li>
+				</ul>
+			</section>
 				<aside id="mainFlowNav">
 					<label id="startProgressHint">(לחץ <a href="personal_details.php">כאן</a> לתחילת תהליך)</label>
 					<nav>
@@ -48,25 +55,25 @@
 								<section class="mainFlowNavContainer">
 									<a href="personal_details.php" id="personalSpace" class="mainFlowNavBox" ></a>
 									<label>אזור אישי</label>
-								<section>
+								</section>
 							</li>
 							<li>
 								<section class="mainFlowNavContainer">
 									<a href="#" id="calcStep" class="mainFlowNavBox"></a>
 									<label>חשב תשלום</label>
-								<section>
+								</section>
 							</li>
 							<li>
 								<section class="mainFlowNavContainer">
 									<a href="#" id="payStep" class="mainFlowNavBox"></a>
 									<label>שלם</label>
-								<section>
+								</section>
 							</li>
 							<li>
 								<section class="mainFlowNavContainer">
 									<a href="#" id="leaveStep" class="mainFlowNavBox"></a>
 									<label>סיים תהליך והסתלק</label>
-								<section>
+								</section>
 							</li>
 						</ul>
 					</nav>
